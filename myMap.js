@@ -77,7 +77,7 @@ function refresh_pokemon_data() {
 
     apigClient.mapPokemonsGET(params, body, additionalParams)
         .then(function(result){
-            console.log(result)
+            map_manager.map_items = result.data;
         }).catch( function(result){
             console.log(result)
         });
