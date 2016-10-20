@@ -26,7 +26,7 @@ function get_pokemon_layer_from_map_items(map_items) {
                                                  { icon: 'https://www.bingmapsportal.com/Content/images/poi_custom.png'});
         pushpins.add(pushpin);
     }
-    layer.push_back(pushpins);
+    layer.push(pushpins);
     return layer;
 }
 
