@@ -45,7 +45,7 @@ function get_pokemon_layer_from_map_items(map_items) {
 
 function add_pokemon_layer() {
     var pokemon_layer =  get_pokemon_layer_from_map_items(map_manager.map_items);
-    map.layers.insert(pokemon_layer); 
+    map_manager.map.layers.insert(pokemon_layer); 
 }
 // 3. Add pokemon count down refresh
 
