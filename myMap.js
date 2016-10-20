@@ -19,8 +19,8 @@ map_items = [
 function get_counter_down_time_from_expire_epoch(epoch) {
     var now_time = new Date().getTime() / 1000;
     var time_left = epoch - now_time;     // unit: second
-    var second = Math.floot(time_left % 60);
-    var minute = Math.floot(time_left / 60);
+    var second = Math.floor(time_left % 60);
+    var minute = Math.floor(time_left / 60);
     return minute + ":" + second;
 }
 
